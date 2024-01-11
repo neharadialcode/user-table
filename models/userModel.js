@@ -1,9 +1,5 @@
 const mongoose = require("mongoose");
 const userModel = new mongoose.Schema({
-  id: {
-    type: Number,
-    required: true,
-  },
   name: {
     type: String,
     required: true,
@@ -12,12 +8,20 @@ const userModel = new mongoose.Schema({
     type: String,
     required: true,
   },
+  id: {
+    type: String,
+    required: true,
+  },
   phone: {
-    type: Number,
+    type: String,
     required: true,
   },
   joiningDate: {
-    type: Date,
+    type: String,
+    required: true,
+  },
+  DOB: {
+    type: String,
     required: true,
   },
 });
