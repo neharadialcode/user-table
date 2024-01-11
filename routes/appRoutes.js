@@ -1,5 +1,5 @@
 const express = require("express");
-const tableData = require("../controllers/tableData");
+const tableData = require("../controllers/createTableData");
 
 const userRoutes = express.Router();
 
